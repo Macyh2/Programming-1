@@ -1,0 +1,12 @@
+C:\Users\huber.m\Desktop\Programming 1\Craig Rules\Craig Rules\bin\Debug\Craig Rules.exe.config
+C:\Users\huber.m\Desktop\Programming 1\Craig Rules\Craig Rules\bin\Debug\Craig Rules.exe
+C:\Users\huber.m\Desktop\Programming 1\Craig Rules\Craig Rules\bin\Debug\Craig Rules.dll
+C:\Users\huber.m\Desktop\Programming 1\Craig Rules\Craig Rules\bin\Debug\IronPython.dll
+C:\Users\huber.m\Desktop\Programming 1\Craig Rules\Craig Rules\bin\Debug\IronPython.Modules.dll
+C:\Users\huber.m\Desktop\Programming 1\Craig Rules\Craig Rules\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\huber.m\Desktop\Programming 1\Craig Rules\Craig Rules\bin\Debug\Microsoft.Scripting.dll
+C:\Users\huber.m\Desktop\Programming 1\Craig Rules\Craig Rules\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\huber.m\Desktop\Programming 1\Craig Rules\Craig Rules\obj\Debug\Craig Rules.pyprojResolveAssemblyReference.cache
+C:\Users\huber.m\Desktop\Programming 1\Craig Rules\Craig Rules\obj\Debug\Craig_Rules.MainForm.resources
+C:\Users\huber.m\Desktop\Programming 1\Craig Rules\Craig Rules\obj\Debug\Craig Rules.pyproj.GenerateResource.Cache
+C:\Users\huber.m\Desktop\Programming 1\Craig Rules\Craig Rules\obj\Debug\Craig Rules.exe

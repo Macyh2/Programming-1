@@ -1,0 +1,3 @@
+C:\Users\huber.m\Desktop\Programming 1\Phone Numbers\Phone Numbers\obj\Debug\Phone Numbers.pyprojResolveAssemblyReference.cache
+C:\Users\huber.m\Desktop\Programming 1\Phone Numbers\Phone Numbers\obj\Debug\Phone_Numbers.MainForm.resources
+C:\Users\huber.m\Desktop\Programming 1\Phone Numbers\Phone Numbers\obj\Debug\Phone Numbers.pyproj.GenerateResource.Cache

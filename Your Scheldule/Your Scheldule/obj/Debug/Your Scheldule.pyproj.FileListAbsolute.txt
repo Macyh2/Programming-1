@@ -1,0 +1,12 @@
+C:\Users\huber.m\Desktop\Programming 1\Your Scheldule\Your Scheldule\bin\Debug\Your Scheldule.exe.config
+C:\Users\huber.m\Desktop\Programming 1\Your Scheldule\Your Scheldule\bin\Debug\Your Scheldule.exe
+C:\Users\huber.m\Desktop\Programming 1\Your Scheldule\Your Scheldule\bin\Debug\Your Scheldule.dll
+C:\Users\huber.m\Desktop\Programming 1\Your Scheldule\Your Scheldule\bin\Debug\IronPython.dll
+C:\Users\huber.m\Desktop\Programming 1\Your Scheldule\Your Scheldule\bin\Debug\IronPython.Modules.dll
+C:\Users\huber.m\Desktop\Programming 1\Your Scheldule\Your Scheldule\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\huber.m\Desktop\Programming 1\Your Scheldule\Your Scheldule\bin\Debug\Microsoft.Scripting.dll
+C:\Users\huber.m\Desktop\Programming 1\Your Scheldule\Your Scheldule\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\huber.m\Desktop\Programming 1\Your Scheldule\Your Scheldule\obj\Debug\Your Scheldule.pyprojResolveAssemblyReference.cache
+C:\Users\huber.m\Desktop\Programming 1\Your Scheldule\Your Scheldule\obj\Debug\Your_Scheldule.MainForm.resources
+C:\Users\huber.m\Desktop\Programming 1\Your Scheldule\Your Scheldule\obj\Debug\Your Scheldule.pyproj.GenerateResource.Cache
+C:\Users\huber.m\Desktop\Programming 1\Your Scheldule\Your Scheldule\obj\Debug\Your Scheldule.exe
