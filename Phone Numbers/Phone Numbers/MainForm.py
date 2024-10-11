@@ -22,7 +22,7 @@ class MainForm(Form):
         # label1
         # 
         self._label1.BackColor = System.Drawing.Color.Wheat
-        self._label1.Font = System.Drawing.Font("Corbel", 14.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._label1.Font = System.Drawing.Font("Cooper Black", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label1.Location = System.Drawing.Point(150, 55)
         self._label1.Name = "label1"
         self._label1.Size = System.Drawing.Size(207, 116)
@@ -32,7 +32,7 @@ class MainForm(Form):
         # button1
         # 
         self._button1.BackColor = System.Drawing.Color.Wheat
-        self._button1.Font = System.Drawing.Font("Corbel", 15, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._button1.Font = System.Drawing.Font("Cooper Black", 15, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._button1.Location = System.Drawing.Point(50, 360)
         self._button1.Name = "button1"
         self._button1.Size = System.Drawing.Size(284, 101)
@@ -44,7 +44,7 @@ class MainForm(Form):
         # button2
         # 
         self._button2.BackColor = System.Drawing.Color.Wheat
-        self._button2.Font = System.Drawing.Font("Corbel", 15, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._button2.Font = System.Drawing.Font("Cooper Black", 15, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._button2.Location = System.Drawing.Point(349, 360)
         self._button2.Name = "button2"
         self._button2.Size = System.Drawing.Size(284, 101)
@@ -56,7 +56,7 @@ class MainForm(Form):
         # button3
         # 
         self._button3.BackColor = System.Drawing.Color.Wheat
-        self._button3.Font = System.Drawing.Font("Corbel", 15, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._button3.Font = System.Drawing.Font("Cooper Black", 15, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._button3.Location = System.Drawing.Point(639, 360)
         self._button3.Name = "button3"
         self._button3.Size = System.Drawing.Size(284, 101)
@@ -68,7 +68,7 @@ class MainForm(Form):
         # label2
         # 
         self._label2.BackColor = System.Drawing.Color.Wheat
-        self._label2.Font = System.Drawing.Font("Corbel", 14.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._label2.Font = System.Drawing.Font("Cooper Black", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label2.Location = System.Drawing.Point(393, 55)
         self._label2.Name = "label2"
         self._label2.Size = System.Drawing.Size(207, 116)
@@ -78,7 +78,7 @@ class MainForm(Form):
         # label3
         # 
         self._label3.BackColor = System.Drawing.Color.Wheat
-        self._label3.Font = System.Drawing.Font("Corbel", 14.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._label3.Font = System.Drawing.Font("Cooper Black", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label3.Location = System.Drawing.Point(639, 55)
         self._label3.Name = "label3"
         self._label3.Size = System.Drawing.Size(207, 116)
@@ -88,7 +88,7 @@ class MainForm(Form):
         # label4
         # 
         self._label4.BackColor = System.Drawing.Color.Wheat
-        self._label4.Font = System.Drawing.Font("Corbel", 14.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._label4.Font = System.Drawing.Font("Cooper Black", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label4.Location = System.Drawing.Point(256, 203)
         self._label4.Name = "label4"
         self._label4.Size = System.Drawing.Size(207, 116)
@@ -98,7 +98,7 @@ class MainForm(Form):
         # label5
         # 
         self._label5.BackColor = System.Drawing.Color.Wheat
-        self._label5.Font = System.Drawing.Font("Corbel", 14.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._label5.Font = System.Drawing.Font("Cooper Black", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label5.Location = System.Drawing.Point(548, 203)
         self._label5.Name = "label5"
         self._label5.Size = System.Drawing.Size(207, 116)
@@ -123,7 +123,7 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        self._label1.Text = "Sweet Aroma Restaurant - (252)728-6878
+        self._label1.Text = "Sweet Aroma Restaurant - (252)728-6878"
         self._label2.Text = "Cheescake Factory - (608)824-2370"
         self._label3.Text = "Old Fashioned Bakery - (608)365-6461"
         self._label4.Text = "Beef-A-Roo - (815)633-6585"
@@ -131,6 +131,10 @@ class MainForm(Form):
 
     def Button2Click(self, sender, e):
         self._label1.Text = ""
+        self._label2.Text = ""
+        self._label3.Text = ""
+        self._label4.Text = ""
+        self._label5.Text = ""
 
     def Button3Click(self, sender, e):
         Application.Exit()

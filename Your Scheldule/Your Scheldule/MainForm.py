@@ -76,7 +76,7 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        self._label1.Text = "1. AP Physics /n 2. Ceramics /n 3. AP Spanish /n 4. Intro to Logic /n 5. AP Lang /n 6. AP Calc BC /n 7. AP Bio /n 8. Computer Programming
+        self._label1.Text = "1. AP Physics \n 2. Ceramics \n 3. AP Spanish \n 4. Intro to Logic \n 5. AP Lang \n 6. AP Calc BC \n 7. AP Bio \n 8. Computer Programming"
 
     def Button2Click(self, sender, e):
         self._label1.Text = ""

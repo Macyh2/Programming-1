@@ -1,0 +1,12 @@
+C:\Users\huber.m\Desktop\Programming 1\Program 76A\Program 76A\obj\Debug\Program 76A.pyprojResolveAssemblyReference.cache
+C:\Users\huber.m\Desktop\Programming 1\Program 76A\Program 76A\obj\Debug\Program_76A.MainForm.resources
+C:\Users\huber.m\Desktop\Programming 1\Program 76A\Program 76A\obj\Debug\Program 76A.pyproj.GenerateResource.Cache
+C:\Users\huber.m\Desktop\Programming 1\Program 76A\Program 76A\bin\Debug\Program 76A.exe.config
+C:\Users\huber.m\Desktop\Programming 1\Program 76A\Program 76A\bin\Debug\Program 76A.exe
+C:\Users\huber.m\Desktop\Programming 1\Program 76A\Program 76A\bin\Debug\Program 76A.dll
+C:\Users\huber.m\Desktop\Programming 1\Program 76A\Program 76A\bin\Debug\IronPython.dll
+C:\Users\huber.m\Desktop\Programming 1\Program 76A\Program 76A\bin\Debug\IronPython.Modules.dll
+C:\Users\huber.m\Desktop\Programming 1\Program 76A\Program 76A\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\huber.m\Desktop\Programming 1\Program 76A\Program 76A\bin\Debug\Microsoft.Scripting.dll
+C:\Users\huber.m\Desktop\Programming 1\Program 76A\Program 76A\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\huber.m\Desktop\Programming 1\Program 76A\Program 76A\obj\Debug\Program 76A.exe
