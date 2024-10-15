@@ -150,13 +150,18 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        pass
+        pounds = int(self._textBox1.Text)
+        shillings = int(self._textBox2.Text)
+        pence = int(self._textBox3.Text)
+        decimal = ((pence/(12 * 20)) + (shillings / 20)) + pounds
+        decimal = round(decimal, 2)
+        self._label5.Text = str(decimal)
 
     def Button2Click(self, sender, e):
         self._textBox1.Text = ""
         self._textBox2.Text = ""
         self._textBox3.Text = ""
-        self._label4.Text = ""
+        self._label5.Text = ""
 
     def Button3Click(self, sender, e):
         Application.Exit()
