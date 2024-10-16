@@ -150,12 +150,13 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        pounds = int(self._textBox1.Text)
-        shillings = int(self._textBox2.Text)
-        pence = int(self._textBox3.Text)
-        decimal = ((pence/(12 * 20)) + (shillings / 20)) + pounds
-        decimal = round(decimal, 2)
-        self._label5.Text = str(decimal)
+        pounds = float(self._textBox1.Text)
+        shillings = float(self._textBox2.Text)
+        pence = float(self._textBox3.Text)
+        decimal = pence/(12 * 20) + (shillings / 20)
+        decimalf = decimal + pounds
+        decimalf = round(decimalf, 2)
+        self._label5.Text = str(decimalf)
 
     def Button2Click(self, sender, e):
         self._textBox1.Text = ""
