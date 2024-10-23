@@ -12,7 +12,8 @@ elif dozens >= 6 and dozens < 11:
     price = 0.4
 elif dozens >= 11:
     price = 0.35
-    
-cost = (dozens * price) + (remainder(price * 1/12))
 
+dozensp = ((dozens * price) / dozens)
+cost = (dozens * price) + ((dozensp * (1/12)) * remainder)
+print("Total cost is $" + str(round(cost,2)))
 input()
