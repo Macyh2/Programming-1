@@ -1,4 +1,5 @@
-﻿import System.Drawing
+﻿import math
+import System.Drawing
 import System.Windows.Forms
 
 from System.Drawing import *
@@ -28,6 +29,7 @@ class MainForm(Form):
         self._button1.TabIndex = 2
         self._button1.Text = "Calculate"
         self._button1.UseVisualStyleBackColor = False
+        self._button1.Click += self.Button1Click
         # 
         # button2
         # 
@@ -40,6 +42,7 @@ class MainForm(Form):
         self._button2.TabIndex = 3
         self._button2.Text = "Clear"
         self._button2.UseVisualStyleBackColor = False
+        self._button2.Click += self.Button2Click
         # 
         # button3
         # 
@@ -52,6 +55,7 @@ class MainForm(Form):
         self._button3.TabIndex = 4
         self._button3.Text = "Exit"
         self._button3.UseVisualStyleBackColor = False
+        self._button3.Click += self.Button3Click
         # 
         # label1
         # 
@@ -97,3 +101,13 @@ class MainForm(Form):
         self.Name = "MainForm"
         self.ResumeLayout(False)
 
+
+    def Button2Click(self, sender, e):
+        self._label4.Text = ""
+
+    def Button3Click(self, sender, e):
+        Exit.Application()
+
+    def Button1Click(self, sender, e):
+        sum(range(3, 9669, 3))
+        self._label4.Text = str(sum)
