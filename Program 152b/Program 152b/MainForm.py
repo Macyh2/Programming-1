@@ -106,5 +106,10 @@ class MainForm(Form):
         Application.Exit()
        
     def Button1Click(self, sender, e):
+        numb = self._textBox1.Text
         heading = "Even Integer\t\tSum"
         self._listBox1.Items.Add(heading)
+        
+        while num < numb:
+            num + num-1
+            
