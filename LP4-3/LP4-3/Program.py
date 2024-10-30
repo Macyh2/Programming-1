@@ -14,6 +14,7 @@ elif dozens >= 11:
     price = 0.35
 
 dozensp = ((dozens * price) / dozens)
-cost = (dozens * price) + ((dozensp * (1/12)) * remainder)
-print("Total cost is $" + str(round(cost,2)))
+cost = (dozens * price)
+realcost = cost + ((eggs * price) - remainder)
+print("Total cost is $" + str(round(realcost,2)))
 input()
