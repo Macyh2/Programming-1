@@ -20,19 +20,19 @@ class MainForm(Form):
         self._listBox1.Font = System.Drawing.Font("Microsoft Sans Serif", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._listBox1.FormattingEnabled = True
         self._listBox1.ItemHeight = 31
-        self._listBox1.Location = System.Drawing.Point(14, 10)
+        self._listBox1.Location = System.Drawing.Point(18, 13)
         self._listBox1.Name = "listBox1"
-        self._listBox1.Size = System.Drawing.Size(656, 376)
+        self._listBox1.Size = System.Drawing.Size(643, 407)
         self._listBox1.TabIndex = 0
         # 
         # button1
         # 
-        self._button1.BackColor = System.Drawing.Color.MidnightBlue
+        self._button1.BackColor = System.Drawing.Color.DarkSlateBlue
         self._button1.Font = System.Drawing.Font("Microsoft Sans Serif", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        self._button1.Location = System.Drawing.Point(699, 32)
+        self._button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        self._button1.Location = System.Drawing.Point(687, 38)
         self._button1.Name = "button1"
-        self._button1.Size = System.Drawing.Size(186, 99)
+        self._button1.Size = System.Drawing.Size(198, 107)
         self._button1.TabIndex = 1
         self._button1.Text = "Calculate"
         self._button1.UseVisualStyleBackColor = False
@@ -40,12 +40,12 @@ class MainForm(Form):
         # 
         # button2
         # 
-        self._button2.BackColor = System.Drawing.Color.MidnightBlue
+        self._button2.BackColor = System.Drawing.Color.DarkSlateBlue
         self._button2.Font = System.Drawing.Font("Microsoft Sans Serif", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        self._button2.Location = System.Drawing.Point(699, 147)
+        self._button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        self._button2.Location = System.Drawing.Point(687, 161)
         self._button2.Name = "button2"
-        self._button2.Size = System.Drawing.Size(186, 99)
+        self._button2.Size = System.Drawing.Size(198, 107)
         self._button2.TabIndex = 2
         self._button2.Text = "Clear"
         self._button2.UseVisualStyleBackColor = False
@@ -53,12 +53,12 @@ class MainForm(Form):
         # 
         # button3
         # 
-        self._button3.BackColor = System.Drawing.Color.MidnightBlue
+        self._button3.BackColor = System.Drawing.Color.DarkSlateBlue
         self._button3.Font = System.Drawing.Font("Microsoft Sans Serif", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        self._button3.Location = System.Drawing.Point(699, 263)
+        self._button3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        self._button3.Location = System.Drawing.Point(687, 283)
         self._button3.Name = "button3"
-        self._button3.Size = System.Drawing.Size(186, 99)
+        self._button3.Size = System.Drawing.Size(198, 107)
         self._button3.TabIndex = 3
         self._button3.Text = "Exit"
         self._button3.UseVisualStyleBackColor = False
@@ -66,14 +66,14 @@ class MainForm(Form):
         # 
         # MainForm
         # 
-        self.BackColor = System.Drawing.Color.LightSteelBlue
-        self.ClientSize = System.Drawing.Size(910, 424)
+        self.BackColor = System.Drawing.Color.Purple
+        self.ClientSize = System.Drawing.Size(912, 444)
         self.Controls.Add(self._button3)
         self.Controls.Add(self._button2)
         self.Controls.Add(self._button1)
         self.Controls.Add(self._listBox1)
         self.Name = "MainForm"
-        self.Text = "Lang122c"
+        self.Text = "Lang122h"
         self.ResumeLayout(False)
 
 
@@ -84,10 +84,5 @@ class MainForm(Form):
         Application.Exit()
 
     def Button1Click(self, sender, e):
-    
-        for num in range(2, 11, 2):
-            sum = num + 1
-            multi = num * 2
-            snum = num ** 2
-            line = str(num) + "\t\t" + str(sum) + "\t\t" + str(multi) + "\t\t" + str(snum)
-            self._listBox1.Items.Add(line)
+        heading = "Number\t\tSquare\t\tSquare Root\t\tCube\t\t4th Root"
+        self._listBox1.Items.Add(heading)
