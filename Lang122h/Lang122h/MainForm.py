@@ -17,13 +17,13 @@ class MainForm(Form):
         # 
         # listBox1
         # 
-        self._listBox1.Font = System.Drawing.Font("Microsoft Sans Serif", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._listBox1.Font = System.Drawing.Font("Microsoft Sans Serif", 15, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._listBox1.FormattingEnabled = True
         self._listBox1.HorizontalScrollbar = True
-        self._listBox1.ItemHeight = 31
+        self._listBox1.ItemHeight = 25
         self._listBox1.Location = System.Drawing.Point(18, 13)
         self._listBox1.Name = "listBox1"
-        self._listBox1.Size = System.Drawing.Size(643, 407)
+        self._listBox1.Size = System.Drawing.Size(643, 404)
         self._listBox1.TabIndex = 0
         # 
         # button1
@@ -85,9 +85,9 @@ class MainForm(Form):
         Application.Exit()
 
     def Button1Click(self, sender, e):
-        heading = "Number\tSquare\tSquare Root\t\tCube\t4th Root"
+        heading = "Number\tSquare\tSquare Root\tCube\t4th Root"
         self._listBox1.Items.Add(heading)
         
         for num in range(1,21):
-            y = str(num) + "\t" + str(num**2) + "\t" + str(num**0.5) + "\t\t" + str(num**3) + "\t" + str(num**0.25)
+            y = str(num) + "\t" + str(round(num**2, 2)) + "\t" + str(round(num**0.5, 2)) + "\t\t" + str(round(num**3, 2)) + "\t" + str(round(num**0.25,2))
             self._listBox1.Items.Add(y)
