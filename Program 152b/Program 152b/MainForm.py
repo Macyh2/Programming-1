@@ -1,4 +1,5 @@
-﻿import System.Drawing
+﻿import math
+import System.Drawing
 import System.Windows.Forms
 
 from System.Drawing import *
@@ -110,6 +111,8 @@ class MainForm(Form):
         heading = "Even Integer\t\tSum"
         self._listBox1.Items.Add(heading)
         
-        while num < numb:
-            num + num-1
+        sum = num + num[-1]
+        
+        while sum < numb:
+            return sum
             

@@ -109,5 +109,6 @@ class MainForm(Form):
         Exit.Application()
 
     def Button1Click(self, sender, e):
-        sum(range(3, 9669, 3))
-        self._label4.Text = str(sum)
+        for num in range(3, 9669, 3):
+            sum = num + num
+            self._label4.Text = str(sum)
