@@ -85,15 +85,14 @@ class MainForm(Form):
         heading = "Number\tCube Root\tCube"
         self._listBox1.Items.Add(heading)
         
-        numpos = num > 0
-        numneg = num < 0
+        #numpos = num > 0
+        #numneg = num < 0
        
-    def cube
-        if numpos:
-            return num**0.333333333333333
-        else:
-            return abs(num**0.333333333) * -1
+       #if numpos:
+            #return num**0.333333333333333
+        #else:
+            #return abs(num**0.333333333) * -1
         
         for num in range(-25, 26):
-            y = str(num) + "\t" + str(cube) + "\t" + str(num**3)
+            y = str(num) + "\t" + "\t" + str(num**3)
             self._listBox1.Items.Add(y)
