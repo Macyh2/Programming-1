@@ -112,4 +112,4 @@ class MainForm(Form):
         sum = 0
         sum = sum + num
         for num in range(3, 9669, 3):
-            self._label4.Text = str(sum)
+            self._label3.Text = str(sum(num))
