@@ -1,4 +1,5 @@
-﻿import System.Drawing
+﻿import math
+import System.Drawing
 import System.Windows.Forms
 
 from System.Drawing import *
@@ -122,6 +123,7 @@ class MainForm(Form):
         self._button2.TabIndex = 9
         self._button2.Text = "-"
         self._button2.UseVisualStyleBackColor = True
+        self._button2.Click += self.Button2Click
         # 
         # button3
         # 
@@ -132,6 +134,7 @@ class MainForm(Form):
         self._button3.TabIndex = 10
         self._button3.Text = "^"
         self._button3.UseVisualStyleBackColor = True
+        self._button3.Click += self.Button3Click
         # 
         # button4
         # 
@@ -142,6 +145,7 @@ class MainForm(Form):
         self._button4.TabIndex = 11
         self._button4.Text = "*"
         self._button4.UseVisualStyleBackColor = True
+        self._button4.Click += self.Button4Click
         # 
         # button5
         # 
@@ -152,6 +156,7 @@ class MainForm(Form):
         self._button5.TabIndex = 12
         self._button5.Text = "/"
         self._button5.UseVisualStyleBackColor = True
+        self._button5.Click += self.Button5Click
         # 
         # button6
         # 
@@ -162,6 +167,7 @@ class MainForm(Form):
         self._button6.TabIndex = 13
         self._button6.Text = "//"
         self._button6.UseVisualStyleBackColor = True
+        self._button6.Click += self.Button6Click
         # 
         # button7
         # 
@@ -172,6 +178,7 @@ class MainForm(Form):
         self._button7.TabIndex = 14
         self._button7.Text = "Mod"
         self._button7.UseVisualStyleBackColor = True
+        self._button7.Click += self.Button7Click
         # 
         # button8
         # 
@@ -232,11 +239,72 @@ class MainForm(Form):
         Application.Exit()
 
     def Button1Click(self, sender, e):
-        num1 = self._textBox1.Text
-        num2 = self._textBox2.Text
+        num1 = float(self._textBox1.Text)
+        num2 = float(self._textBox2.Text)
         
-        sum = str(num1 + num2)
+        sum = 0
+        sum = sum + num1 + num2
         
         self._label5.Text = "+"
         self._label6.Text = str(sum)
         
+
+    def Button2Click(self, sender, e):
+        num1 = float(self._textBox1.Text)
+        num2 = float(self._textBox2.Text)
+        
+        difference = 0
+        difference = difference + num1 - num2
+        
+        self._label5.Text = "-"
+        self._label6.Text = str(difference)
+
+    def Button4Click(self, sender, e):
+        num1 = float(self._textBox1.Text)
+        num2 = float(self._textBox2.Text)
+        
+        product = 0
+        product = product + num1 * num2
+        
+        self._label5.Text = "*"
+        self._label6.Text = str(product)
+
+    def Button3Click(self, sender, e):
+        num1 = int(self._textBox1.Text)
+        num2 = int(self._textBox2.Text)
+        
+        ex = 0
+        ex = ex + (num1)**num2
+        
+        self._label5.Text = "^"
+        self._label6.Text = str(ex)
+
+    def Button5Click(self, sender, e):
+        num1 = float(self._textBox1.Text)
+        num2 = float(self._textBox2.Text)
+        
+        divide = 0
+        divide = divide + num1 / num2
+        
+        self._label5.Text = "/"
+        self._label6.Text = str(divide)
+
+    def Button6Click(self, sender, e):
+        num1 = float(self._textBox1.Text)
+        num2 = float(self._textBox2.Text)
+        
+        dd = 0
+        dd = dd + num1 // num2
+        
+        self._label5.Text = "//"
+        self._label6.Text = str(dd)
+
+    def Button7Click(self, sender, e):
+        num1 = float(self._textBox1.Text)
+        num2 = float(self._textBox2.Text)
+        
+        mod = 0
+        mod = mod + num1 % num2
+        
+        self._label5.Text = "%"
+        self._label6.Text = str(mod)
