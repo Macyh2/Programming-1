@@ -132,7 +132,7 @@ class MainForm(Form):
 
 
     def Button2Click(self, sender, e):
-        self._textBox2.Text = ""
+        self._textBox1.Text = ""
         self._textBox2.Text = ""
         self._label1.Text = ""
 

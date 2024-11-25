@@ -412,4 +412,23 @@ class MainForm(Form):
         Application.Exit()
 
     def Button1Click(self, sender, e):
-        pass
+        
+        nights = float(self._textBox1.Text)
+        nightlycharge = float(self._textBox2.Text)
+        roomservice = float(self._textBox3.Text)
+        phone = float(self._textBox4.Text)
+        misc = float(self._textBox5.Text)
+        
+        roomcharge = nights * nightlycharge
+        self._label24.Text = "$" + str(round(roomcharge, 2))
+        addcharge = roomservice + misc + phone
+        self._label25.Text = "$" + str(round(addcharge, 2))
+        subtotal = roomcharge + addcharge
+        self._label26.Text = "$" +str(round(subtotal, 2))
+        tax = subtotal * 0.08
+        self._label27.Text = "$" + str(round(tax, 2))
+        totalcharge = subtotal + tax
+        self._label28.Text = "$" + str(round(totalcharge, 2))
+        
+        
+        

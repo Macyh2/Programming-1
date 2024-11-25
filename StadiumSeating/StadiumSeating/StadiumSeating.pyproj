@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{1CC355AE-660C-4486-875F-C51929EBC616}</ProjectGuid>
+    <ProjectGuid>{EAC64F27-BB35-47C2-94C8-487015A01FDE}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <RootNamespace>Pg162RoomCharge</RootNamespace>
-    <AssemblyName>Pg162RoomCharge</AssemblyName>
+    <RootNamespace>StadiumSeating</RootNamespace>
+    <AssemblyName>StadiumSeating</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
