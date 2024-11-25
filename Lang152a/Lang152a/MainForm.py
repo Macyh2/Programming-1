@@ -103,13 +103,14 @@ class MainForm(Form):
 
 
     def Button2Click(self, sender, e):
-        self._label4.Text = ""
+        self._label3.Text = ""
 
     def Button3Click(self, sender, e):
         Exit.Application()
 
     def Button1Click(self, sender, e):
         sum = 0
-        sum = sum + num
-        for num in range(3, 9669, 3):
-            self._label3.Text = str(sum(num))
+        for num in range(3, 9672, 3):
+        	sum = sum + num
+        	self._label3.Text = str(sum)
+            
