@@ -280,11 +280,20 @@ class MainForm(Form):
 
     def Button1Click(self, sender, e):
         ClassA = float(self._textBox1.Text)
-        ClassB = self._textBox2.Text
-        ClassC = self._textBox3.Text
+        ClassB = float(self._textBox2.Text)
+        ClassC = float(self._textBox3.Text)
         
         classacost = ClassA * 15
         self._label12.Text = "$" + str(round(classacost, 2))
+        
+        classbcost = ClassB * 12
+        self._label11.Text = "$" + str(round(classbcost, 2))
+        
+        classccost = ClassC * 9
+        self._label10.Text = "$" + str(round(classccost, 2))
+        
+        totalrev = classacost + classbcost + classccost
+        self._label18.Text = "$" + str(round(totalrev, 2))
 
     def Button3Click(self, sender, e):
         Application.Exit()
