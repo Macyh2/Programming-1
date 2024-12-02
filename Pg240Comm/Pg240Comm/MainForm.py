@@ -194,3 +194,25 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         sales = float(self._textBox1.Text)
         advancedpay = float(self._textBox2.Text)
+        
+        if sales < 9999:
+            commissionrate = 5
+            print(self._label6.Text = str(commissionrate) + "%")
+        elif sales > 10000 and sales < 14999:
+            commissionrate = 10
+            print(self._label6.Text = str(commissionrate) + "%")
+        elif sales > 15000 and sales < 17999:
+            commissionrate = 12
+            print(self._label6.Text = str(commissionrate) + "%")
+        elif sales > 18000 and sales < 21999:
+            commissionrate = 14
+            print(self._label6.Text = str(commissionrate) + "%")
+        else sales > 22000:
+            commissionrate = 16
+            print(self._label6.Text = str(commissionrate) + "%")
+        
+        commission = (commissionrate*0.01) * sales
+        self._label7.Text = "$" + str(round(commission, 2))
+        
+        netpay = commission - advancedpay
+        self._label8.Text = "$" + str(round(netpay, 2))
