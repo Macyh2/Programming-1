@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FD48973F-F585-4F70-812B-4D0503B36CE9}") = "Pg247Radio", "Pg247Radio\Pg247Radio.pyproj", "{0135FF83-A7E6-4FF9-A3BE-BC5D3C158098}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0135FF83-A7E6-4FF9-A3BE-BC5D3C158098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0135FF83-A7E6-4FF9-A3BE-BC5D3C158098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0135FF83-A7E6-4FF9-A3BE-BC5D3C158098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0135FF83-A7E6-4FF9-A3BE-BC5D3C158098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
