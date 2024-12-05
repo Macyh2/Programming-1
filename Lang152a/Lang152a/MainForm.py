@@ -106,7 +106,7 @@ class MainForm(Form):
         self._label3.Text = ""
 
     def Button3Click(self, sender, e):
-        Exit.Application()
+        Application.Exit()
 
     def Button1Click(self, sender, e):
         sum = 0

@@ -10,7 +10,6 @@ class MainForm(Form):
         self.InitializeComponent()
     
     def InitializeComponent(self):
-        self._listBox1 = System.Windows.Forms.ListBox()
         self._textBox1 = System.Windows.Forms.TextBox()
         self._button1 = System.Windows.Forms.Button()
         self._button2 = System.Windows.Forms.Button()
@@ -20,17 +19,8 @@ class MainForm(Form):
         self._label3 = System.Windows.Forms.Label()
         self._label4 = System.Windows.Forms.Label()
         self._label5 = System.Windows.Forms.Label()
+        self._label6 = System.Windows.Forms.Label()
         self.SuspendLayout()
-        # 
-        # listBox1
-        # 
-        self._listBox1.Font = System.Drawing.Font("Microsoft Sans Serif", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._listBox1.FormattingEnabled = True
-        self._listBox1.ItemHeight = 29
-        self._listBox1.Location = System.Drawing.Point(22, 56)
-        self._listBox1.Name = "listBox1"
-        self._listBox1.Size = System.Drawing.Size(713, 265)
-        self._listBox1.TabIndex = 0
         # 
         # textBox1
         # 
@@ -76,7 +66,6 @@ class MainForm(Form):
         self._button3.Name = "button3"
         self._button3.Size = System.Drawing.Size(163, 102)
         self._button3.TabIndex = 4
-        self._button3.Text = "Exit"
         self._button3.UseVisualStyleBackColor = False
         self._button3.Click += self.Button3Click
         # 
@@ -123,10 +112,20 @@ class MainForm(Form):
         self._label5.Size = System.Drawing.Size(174, 66)
         self._label5.TabIndex = 9
         # 
+        # label6
+        # 
+        self._label6.BackColor = System.Drawing.Color.Linen
+        self._label6.Font = System.Drawing.Font("Microsoft Sans Serif", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label6.Location = System.Drawing.Point(21, 72)
+        self._label6.Name = "label6"
+        self._label6.Size = System.Drawing.Size(712, 273)
+        self._label6.TabIndex = 10
+        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.NavajoWhite
         self.ClientSize = System.Drawing.Size(1027, 418)
+        self.Controls.Add(self._label6)
         self.Controls.Add(self._label5)
         self.Controls.Add(self._label4)
         self.Controls.Add(self._label3)
@@ -136,7 +135,6 @@ class MainForm(Form):
         self.Controls.Add(self._button2)
         self.Controls.Add(self._button1)
         self.Controls.Add(self._textBox1)
-        self.Controls.Add(self._listBox1)
         self.Name = "MainForm"
         self.Text = "Program 152b"
         self.ResumeLayout(False)
@@ -155,8 +153,8 @@ class MainForm(Form):
         heading = "Even Integer\t\tSum"
         self._listBox1.Items.Add(heading)
         
-        self._label5.Text = numb
-        self._label3.Text = "0" + "..." + numb
+        self._label5.Text = str(numb)
+        self._label3.Text = "0" + "..." + str(numb)
         
         even_num = 0
         sum = 0
@@ -165,4 +163,4 @@ class MainForm(Form):
         	even_num = even_num + 2
         	sum = sum + even_num
         	line = even_num + "\t\t" + sum
-        	return self._listBox1.Item.Add(line)
+        	return self._label6.Item.Add(line)
