@@ -352,8 +352,6 @@ class MainForm(Form):
         self._textBox3.Text = ""
         self._textBox4.Text = ""
         self._textBox5.Text = ""
-        self._label15.Text = ""
-        self._label18.Text = ""
         self._label24.Text = ""
         self._label25.Text = ""
         self._label26.Text = ""
@@ -380,7 +378,4 @@ class MainForm(Form):
         tax = subtotal * 0.08
         self._label27.Text = "$" + str(round(tax, 2))
         totalcharge = subtotal + tax
-        self._label28.Text = "$" + str(round(totalcharge, 2))
-        
-        
-        
+        self._label28.Text = "$" + str(round(totalcharge, 2)) 
