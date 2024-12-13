@@ -270,7 +270,7 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        length = self._textBox1.Text
+        length = float(self._textBox1.Text)
         if self._radioButton1.Checked == True:
              price = 40
         elif self._radioButton2.Checked == True:

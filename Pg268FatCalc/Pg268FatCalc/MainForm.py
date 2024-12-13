@@ -26,14 +26,14 @@ class MainForm(Form):
         self._label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         self._label1.Location = System.Drawing.Point(12, 28)
         self._label1.Name = "label1"
-        self._label1.Size = System.Drawing.Size(443, 43)
+        self._label1.Size = System.Drawing.Size(470, 67)
         self._label1.TabIndex = 0
         self._label1.Text = "Enter the number of calories in the food:"
         # 
         # textBox1
         # 
         self._textBox1.Font = System.Drawing.Font("Microsoft Sans Serif", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._textBox1.Location = System.Drawing.Point(452, 25)
+        self._textBox1.Location = System.Drawing.Point(492, 25)
         self._textBox1.Name = "textBox1"
         self._textBox1.Size = System.Drawing.Size(384, 35)
         self._textBox1.TabIndex = 1
@@ -51,7 +51,7 @@ class MainForm(Form):
         # textBox2
         # 
         self._textBox2.Font = System.Drawing.Font("Microsoft Sans Serif", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._textBox2.Location = System.Drawing.Point(462, 119)
+        self._textBox2.Location = System.Drawing.Point(492, 116)
         self._textBox2.Name = "textBox2"
         self._textBox2.Size = System.Drawing.Size(374, 35)
         self._textBox2.TabIndex = 3
@@ -70,7 +70,7 @@ class MainForm(Form):
         # 
         self._button1.BackColor = System.Drawing.Color.OliveDrab
         self._button1.Font = System.Drawing.Font("Microsoft Sans Serif", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button1.Location = System.Drawing.Point(12, 288)
+        self._button1.Location = System.Drawing.Point(29, 288)
         self._button1.Name = "button1"
         self._button1.Size = System.Drawing.Size(263, 100)
         self._button1.TabIndex = 6
@@ -82,7 +82,7 @@ class MainForm(Form):
         # 
         self._button2.BackColor = System.Drawing.Color.OliveDrab
         self._button2.Font = System.Drawing.Font("Microsoft Sans Serif", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button2.Location = System.Drawing.Point(292, 288)
+        self._button2.Location = System.Drawing.Point(308, 288)
         self._button2.Name = "button2"
         self._button2.Size = System.Drawing.Size(263, 100)
         self._button2.TabIndex = 7
@@ -94,7 +94,7 @@ class MainForm(Form):
         # 
         self._button3.BackColor = System.Drawing.Color.OliveDrab
         self._button3.Font = System.Drawing.Font("Microsoft Sans Serif", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button3.Location = System.Drawing.Point(573, 288)
+        self._button3.Location = System.Drawing.Point(590, 288)
         self._button3.Name = "button3"
         self._button3.Size = System.Drawing.Size(263, 100)
         self._button3.TabIndex = 8
@@ -106,7 +106,7 @@ class MainForm(Form):
         # 
         self._label4.BackColor = System.Drawing.Color.SeaShell
         self._label4.Font = System.Drawing.Font("Microsoft Sans Serif", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label4.Location = System.Drawing.Point(475, 212)
+        self._label4.Location = System.Drawing.Point(492, 212)
         self._label4.Name = "label4"
         self._label4.Size = System.Drawing.Size(361, 35)
         self._label4.TabIndex = 9
@@ -114,7 +114,7 @@ class MainForm(Form):
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.DarkOliveGreen
-        self.ClientSize = System.Drawing.Size(848, 423)
+        self.ClientSize = System.Drawing.Size(888, 423)
         self.Controls.Add(self._label4)
         self.Controls.Add(self._button3)
         self.Controls.Add(self._button2)
