@@ -225,6 +225,7 @@ class MainForm(Form):
         self._button2.TabIndex = 13
         self._button2.Text = "Clear"
         self._button2.UseVisualStyleBackColor = True
+        self._button2.Click += self.Button2Click
         # 
         # button3
         # 
@@ -235,6 +236,7 @@ class MainForm(Form):
         self._button3.TabIndex = 14
         self._button3.Text = "Exit"
         self._button3.UseVisualStyleBackColor = True
+        self._button3.Click += self.Button3Click
         # 
         # MainForm
         # 
@@ -270,5 +272,37 @@ class MainForm(Form):
         time2 = float(self._textBox5.Text)
         time3 = float(self._textBox6.Text)
         
-        if time1 > time2 and time3:
-            return self._label9.Text = str(name1)
+        if time1 < time2 and time1 < time3:
+            self._label9.Text = str(name1)
+        elif time2 < time1 and time2 < time3:
+            self._label9.Text = str(name2)
+        elif time3 < time1 and time3 < time2:
+            self._label9.Text = str(name3)
+            
+        if time1 < time2 < time3 or time3 < time2 < time1:
+            self._label10.Text = str(name2)
+        elif time2 < time1 < time3 or time3 < time1 < time2:
+            self._label10.Text = str(name1)
+        elif time1 < time3 < time2 or time2 < time3 < time1:
+            self._label10.Text = str(name3)
+            
+        if time1 > time2 and time1 > time3:
+            self._label11.Text = str(name1)
+        elif time2 > time1 and time2 > time3:
+            self._label11.Text = str(name2)
+        elif time3 > time1 and time3 > time2:
+            self._label11.Text = str(name3)
+
+    def Button2Click(self, sender, e):
+        self._label9.Text = ""
+        self._label10.Text = ""
+        self._label11.Text = ""
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
+        self._textBox3.Text = ""
+        self._textBox4.Text = ""
+        self._textBox5.Text = ""
+        self._textBox6.Text = ""
+
+    def Button3Click(self, sender, e):
+        Application.Exit()
