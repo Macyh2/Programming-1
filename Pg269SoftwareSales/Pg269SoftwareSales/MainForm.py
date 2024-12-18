@@ -200,43 +200,55 @@ class MainForm(Form):
         packc = float(self._textBox3.Text)
         
         if packa >= 10 and packa <= 19:
-            totala = packa * 99 - (packa * 0.2)
-            self._label4.Text = "Package A: $" + str(round(total, 2))
+            totala = packa * 99 
+            totalaf = totala - (totala * 0.2)
+            self._label4.Text = "Package A: $" + str(round(totalaf, 2))
         elif packa >= 20 and packa <= 49:
-            totala = packa * 99 - (packa * 0.3)
-            self._label4.Text = "Package A: $" + str(round(total, 2))
+            totala = packa * 99
+            totalaf = totala - (totala * 0.3)
+            self._label4.Text = "Package A: $" + str(round(totalaf, 2))
         elif packa >= 50 and packa <= 99:
-            totala = packa * 99 - (packa * 0.4)
-            self._label4.Text = "Package A: $" + str(round(total, 2))
+            totala = packa * 99
+            totalaf = totala - (totala * 0.4)
+            self._label4.Text = "Package A: $" + str(round(totalaf, 2))
         elif packa >= 100:
-            totala = packa * 99 - (packa * 0.5)
-            self._label4.Text = "Package A: $" + str(round(total, 2))
+            totala = packa * 99
+            totalaf = totala - (totala * 0.5)
+            self._label4.Text = "Package A: $" + str(round(totalaf, 2))
             
         if packb >= 10 and packb <= 19:
-            totalb = packb * 199 - (packb * 0.2)
-            self._label5.Text = "Package B: $" + str(round(total, 2))
+            totalb = packb * 199
+            totalbf = totalb - (totalb * 0.2)
+            self._label5.Text = "Package B: $" + str(round(totalbf, 2))
         elif packb >= 20 and packb <= 49:
-            totalb = packb * 199 - (packb * 0.3)
-            self._label5.Text = "Package B: $" + str(round(total, 2))
+            totalb = packb * 199
+            totalbf = totalb - (totalb * 0.3)
+            self._label5.Text = "Package B: $" + str(round(totalbf, 2))
         elif packb >= 50 and packb <= 99:
-            totalb = packb * 199 - (packb * 0.4)
-            self._label5.Text = "Package B: $" + str(round(total, 2))
+            totalb = packb * 199
+            totalbf = totalb - (totalb * 0.4)
+            self._label5.Text = "Package B: $" + str(round(totalbf, 2))
         elif packb >= 100:
-            totalb = packb * 199 - (packb * 0.5)
-            self._label5.Text = "Package B: $" + str(round(total, 2))
+            totalb = packb * 199
+            totalbf = totalb - (totalb * 0.5)
+            self._label5.Text = "Package B: $" + str(round(totalbf, 2))
             
         if packc >= 10 and packc <= 19:
             totalc = packc * 199 - (packc * 0.2)
-            self._label6.Text = "Package C: $" + str(round(total, 2))
+            totalcf = totalc - (totalc * 0.2)
+            self._label6.Text = "Package C: $" + str(round(totalcf, 2))
         elif packc >= 20 and packc <= 49:
-            totalc = packc * 199 - (packc * 0.3)
-            self._label6.Text = "Package C: $" + str(round(total, 2))
+            totalc = packc * 199
+            totalcf = totalc - (totalc * 0.3)
+            self._label6.Text = "Package C: $" + str(round(totalcf, 2))
         elif packc >= 50 and packc <= 99:
-            totalc = packc * 199 - (packc * 0.4)
-            self._label6.Text = "Package C: $" + str(round(total, 2))
+            totalc = packc * 199
+            totalcf = totalc - (totalc * 0.4)
+            self._label6.Text = "Package C: $" + str(round(totalcf, 2))
         elif packc >= 100:
-            totalc = packc * 199 - (packc * 0.5)
-            self._label6.Text = "Package C: $" + str(round(total, 2))
+            totalc = packc * 199
+            totalcf = totalc - (totalc * 0.5)
+            self._label6.Text = "Package C: $" + str(round(totalcf, 2))
             
-        grandtotal = totala + totalb + totalc
-        self._label7.Text = str(round(grandtotal, 2))
+        grandtotal = totalaf + totalbf + totalcf
+        self._label7.Text = "$" + str(round(grandtotal, 2))
